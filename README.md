@@ -16,17 +16,8 @@
 
 
 ## Deployment
-
-- Install PHP
-- Install Composer
-
-- Head to the root directory of your project that contains index.html (the main HTML page).
-- In this directory, run touch composer.json to create a file: composer.json.
-- Within the file, add the following line: {}
-- In the same directory, run touch index.php to create a file: index.php.
-- Within the file, add the following line: <?php include_once("index.html"); ?>
-- Now, commit and push these two new files to your repository. 
 - heroku create
 - git push heroku master
+- heroku run rake db:migrate
 - Heroku open
 
